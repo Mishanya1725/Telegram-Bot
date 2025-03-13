@@ -3,6 +3,8 @@ from aiogram.types import Message, CallbackQuery
 
 call_router = Router()
 
+# callback запросы вощникают когда пользователь нажимает на инлайн кнопку под сообщением бота, в отличие от отправки нового сообщения бот обновляет интерфейс или отправляет сообщение основанное на callback запросах
+
 import keyboard.inline_kb as ikb
 
 @call_router.message(F.text == 'Меню')
